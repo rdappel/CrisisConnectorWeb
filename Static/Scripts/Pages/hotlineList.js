@@ -30,15 +30,29 @@
 		/* This code takes the .json file and starts to deserialize the file.
 		It is going thought the json file and appropriately append to the DOM. */
 		data.forEach(({ title, types }) => {
-			const hotlineList = createElementAndAppend(document.body, 'div', 'hotlineList', null, [ 'searchHotline' ]);
-			const hotlineTitle = createElementAndAppend(hotlineList, 'div', 'hotlineTitle')
-			createElementAndAppend(hotlineTitle, 'h2', null, title)
-			const hotlineName = createElementAndAppend(hotlineTitle, 'div', 'hotlineName')
+			const hotlineList = createElementAndAppend(document.body, "div", "hotlineList", null, ["searchHotline"]);
+			const hotlineTitle = createElementAndAppend(hotlineList, "div", "hotlineTitle");
+			createElementAndAppend(hotlineTitle, "h2", null, title);
+			const hotlineName = createElementAndAppend(hotlineTitle, "div", "hotlineName");
 			types.forEach(({ name, link }) => {
-				createElementAndAppend(hotlineName, 'a', null, name).href = link;
+			  const hotlineLink = createElementAndAppend(hotlineName, "a", null, name);
+			  hotlineLink.href = link;
 			});
-		});
-	}
+		  
+			hotlineTitle.addEventListener("click", (event) => {
+			  // Prevent default behavior of following the anchor link
+			  event.preventDefault();
+		  
+			  // Ask user if they want to make a call
+			  const confirmed = window.confirm(`Do you want to call ${title}?`);
+			  if (confirmed) {
+				// Open the phone app with the phone number
+				window.location.href = `tel:${types[0].link}`;
+			  }
+			});
+		  });
+		  
+	}	
 
 	/* The code below handles the search. The search will run every 200ms for performace reasons.
 	The code gets the user input, and then it lowercases it. Afterwards it get's the text from certain elements
