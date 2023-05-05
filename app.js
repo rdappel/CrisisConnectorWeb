@@ -8,4 +8,4 @@ express.json();
 app.use(express.static(root));
 app.use('/', routes);
 
-app.listen(3000);
+app.listen(3000, () => console.log('Server running: http://localhost:3000'));
