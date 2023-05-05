@@ -1,9 +1,5 @@
-(async () => {
-	/* The getHotlineData function goes to the json url and then tries to fetch it. 
-	Then it will wait for it be fetched then return the response as a .json otherwise 
-	it'll throw an error in the console.
-	 */
-	const getHotlineData = async () => {
+const renderHotlineListPage = async ()  => {
+    const getHotlineData = async () => {
 		try {
 			const url = '/api/hotline'
 			const response = await fetch(url);
@@ -90,5 +86,8 @@
 	/* Since getHotline is an aync function, we need to do await to call it. 
 	The only way to do await is when the function is inside a async, that's why
 	it is nested async arrow function */
+
 	displayHotlines(await getHotlineData());
-})();
+};
+
+export { renderHotlineListPage };
