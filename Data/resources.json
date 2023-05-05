@@ -1,0 +1,42 @@
+[
+    {
+      "category": "Depression",
+      "types": [
+        {
+          "title": "Depression",
+          "description": "Depression",
+          "details": "Depression is a mental health disorder that affects a person's mood, thoughts, and behavior. It is a serious condition that can significantly impact a person's daily life, relationships, and overall well-being. Depression can occur at any age and can affect anyone, regardless of gender, ethnicity, or background.",
+          "link": "https://www.google.com/",
+          "image_path": "https://quotewizard.com/media/l5ybwuym/study-seasonal-depression.png?anchor=center&mode=crop&width=900&height=506&rnd=133135290139830000?format=webp&quality=80"
+        },
+        {
+          "title": "Anxiety",
+          "description": "Anxiety",
+          "details": "Anxiety is a mental health condition characterized by intense feelings of worry, fear, or apprehension. It is a normal and adaptive response to stress and can be beneficial in some situations, but when it becomes excessive and interferes with daily life, it can be considered a disorder.",
+          "link": "https://www.google.com/",
+          "image_path": "https://quotewizard.com/media/3azjd0pe/study-mental-health-during-pandemic.png"
+        }
+      ]
+    },
+    {
+        "category": "Sleep",
+        "types": [
+          {
+            "title": "Sleep",
+            "description": "Sleep",
+            "details": "A group of conditions SLEEEEPP with the elevation or lowering of a person's mood, such as depression or bipolar disorder.",
+            "link": "https://www.google.com/",
+            "image_path": "https://quotewizard.com/media/l5ybwuym/study-seasonal-depression.png?anchor=center&mode=crop&width=900&height=506&rnd=133135290139830000?format=webp&quality=80"
+          },
+          {
+            "title": "UESS",
+            "description": "WEEEE",
+            "details": "A TEST of conditions associated with the elevation or lowering of a person's mood, such as depression or bipolar disorder.",
+            "link": "https://www.google.com/",
+            "image_path": "https://quotewizard.com/media/3azjd0pe/study-mental-health-during-pandemic.png"
+          }
+        ]
+    }
+  ]
+  
+  

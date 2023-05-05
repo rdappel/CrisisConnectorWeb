@@ -1,0 +1,4 @@
+GET https://raw.githubusercontent.com/BhuwanTiwari2002/CrisisConnector/master/Data/TestJSON/hotline.json
+
+GET https://raw.githubusercontent.com/BhuwanTiwari2002/CrisisConnector/BhuwanBranch/Data/TestJSON/resources.json
+

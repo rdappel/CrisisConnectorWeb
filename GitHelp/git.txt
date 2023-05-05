@@ -1,0 +1,15 @@
+
+
+Necessary Git commands
+
+1. git add .
+2. git commit -m "Your commit message"
+3. git push
+4. git fetch (update the local)
+
+Once pushed go to github for review and approve each other and merge changes to master
+
+4. Go to your own branch 
+5. git pull origin master
+
+

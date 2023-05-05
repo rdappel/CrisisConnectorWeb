@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Mental health",
+    "types": [
+      {
+        "name": "Depression",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "link": "https://www.google.com/"
+      }, 
+      {
+        "name": "Bipolar Disorders",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Post-Traumatic Stress Disorder (PTSD)",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Schizophrenia",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Disruptive behaviour",
+        "link": "https://www.google.com/"
+      }
+    ]
+  },
+  {
+    "title": "Sleep",
+    "types": [
+      {
+        "name": "Insomnia",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Sleep Apnea",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Narcolepsy",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Restless Legs Syndrome",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Parasomnias",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Excessive Sleepiness",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Shift Work Disorder",
+        "link": "https://www.google.com/"
+      }
+    ]
+  },
+  {
+    "title": "Eating Disorder",
+    "types": [
+      {
+        "name": "Anorexia Nervosa",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Bulimia Nervosa",
+        "link": "https://www.google.com/"
+      },
+      {
+        "name": "Binge Eating Disorder",
+        "link": "https://www.google.com/"
+      }
+    ]
+  }
+]
+
