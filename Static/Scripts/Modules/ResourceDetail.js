@@ -2,7 +2,6 @@ let dataTitle;
 let dataDescription;
 let dataDetails;
 let dataLink;
-const container = document.getElementById("detailsContainer");
 const getDataFromResourceDetail = (title, description, details, link) => {
     dataTitle = title;
     dataDescription = description;
@@ -13,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderResourceDetails(dataTitle, dataDescription, dataDetails,dataLink);
   });
 const renderResourceDetails =  (title, description, details, link) => {
+    const container = document.getElementById("detailsContainer");
     container.style.width = "80%";
     container.style.margin = "auto";
     container.style.paddingTop = "20px";

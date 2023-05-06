@@ -38,7 +38,6 @@ const renderHotlineListPage = async ()  => {
 			hotlineTitle.addEventListener("click", (event) => {
 			  // Prevent default behavior of following the anchor link
 			  event.preventDefault();
-		  
 			  // Ask user if they want to make a call
 			  const confirmed = window.confirm(`Do you want to call ${title}?`);
 			  if (confirmed) {
