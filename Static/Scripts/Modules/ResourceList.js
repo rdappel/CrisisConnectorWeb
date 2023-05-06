@@ -40,11 +40,10 @@ const renderResourceList = async ()  => {
                 event.preventDefault(); // prevent the default behavior of following the href link
                 window.location.href = "../../Pages/ResourceDetail.html";
                 getDataFromResourceDetail(title, description, details, link);
-            });
-              
+            });   
             //resourceAncor.href = `ResourceDetail.html?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&details=${encodeURIComponent(details)}&link=${encodeURIComponent(link)}`;
             //resourceAncor.href = `/Resources/userParam?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&details=${encodeURIComponent(details)}&link=${encodeURIComponent(link)}`;
-          // ResourceDetail(title, description, details, link); 
+           // ResourceDetail(title, description, details, link); 
         });
         });
     }
