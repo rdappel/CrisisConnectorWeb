@@ -1,13 +1,7 @@
+
+import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
+getHotlineData('api/hotline');
 const renderHotlineListPage = async ()  => {
-    const getHotlineData = async () => {
-		try {
-			const url = '/api/hotline'
-			const response = await fetch(url);
-			return await response.json();
-		} catch (error) {
-			console.error(error);
-		}
-	}
 	const displayHotlines = data => {
 		if (!data) return;
 		/* This function was created to prevent the repetition of creating 
@@ -86,7 +80,7 @@ const renderHotlineListPage = async ()  => {
 	The only way to do await is when the function is inside a async, that's why
 	it is nested async arrow function */
 
-	displayHotlines(await getHotlineData());
+	displayHotlines(await getHotlineData('hotline')); // Calling the method from the Endpoint Module
 };
 
 export { renderHotlineListPage };

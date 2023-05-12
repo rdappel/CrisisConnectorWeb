@@ -37,8 +37,8 @@ const renderResourceList = async ()  => {
             createElementAndAppend(resourceInfo, 'p', null, description, ['resource-desc']);
             let resourceAncor = createElementAndAppend(resourceInfo, 'a', null, "More Info", ['resource-link']);
             resourceAncor.addEventListener("click", (event) => {
-                event.preventDefault(); // prevent the default behavior of following the href link
                 window.location.href = "../../Pages/ResourceDetail.html";
+                event.preventDefault(); // prevent the default behavior of following the href link
                 getDataFromResourceDetail(title, description, details, link);
             });   
             //resourceAncor.href = `ResourceDetail.html?title=${encodeURIComponent(title)}&description=${encodeURIComponent(description)}&details=${encodeURIComponent(details)}&link=${encodeURIComponent(link)}`;

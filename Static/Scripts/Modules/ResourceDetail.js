@@ -1,4 +1,7 @@
-const getDataFromResourceDetail = (title, description, details, link) => {
+
+const getDataFromResourceDetail = () => {
+    
+    console.log(title, description, details)
     const container = document.getElementById("detailsContainer");
     container.style.width = "80%";
     container.style.margin = "auto";
@@ -23,14 +26,14 @@ const getDataFromResourceDetail = (title, description, details, link) => {
     container.appendChild(resourceLink);
     
 }
-document.addEventListener("DOMContentLoaded", () => {
-    // Call the getDataFromResourceDetail function here with the appropriate arguments
-    const title = "Resource Title";
-    const description = "Resource description";
-    const details = "Resource details";
-    const link = "https://example.com/resource";
-    getDataFromResourceDetail(title, description, details, link);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     // Call the getDataFromResourceDetail function here with the appropriate arguments
+//     const title = "Resource Title";
+//     const description = "Resource description";
+//     const details = "Resource details";
+//     const link = "https://example.com/resource";
+//     getDataFromResourceDetail(title, description, details, link);
+// });
 
 
 export default getDataFromResourceDetail;
