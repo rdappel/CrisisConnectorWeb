@@ -1,6 +1,4 @@
-
 import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
-getHotlineData('api/hotline');
 const renderHotlineListPage = async ()  => {
 	const displayHotlines = data => {
 		if (!data) return;
@@ -16,7 +14,7 @@ const renderHotlineListPage = async ()  => {
 			if (text) element.innerText = text;
 			classes.forEach(className => element.classList.add(className));
 			return element;
-		}
+		} 
 		/* This code takes the .json file and starts to deserialize the file.
 		It is going thought the json file and appropriately append to the DOM. */
 		data.forEach(({ title, types }) => {

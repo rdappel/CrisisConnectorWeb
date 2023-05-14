@@ -1,18 +1,10 @@
 import getDataFromResourceDetail from './ResourceDetail.js';
+import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
 
 const renderResourceList = async ()  => {
     const container = document.getElementById("ResourcesMainContainer");
 
     (async () => {
-    const getHotlineData = async () => {
-            try {
-                const url = '/api/resource';
-                const response = await fetch(url);
-                return await response.json();
-            } catch (error) {
-                console.error(error);
-            }
-        }
     const displayHotlines = data => {
         if (!data) return;
 
@@ -36,8 +28,10 @@ const renderResourceList = async ()  => {
             createElementAndAppend(resourceInfo, 'h2', null, title, ['resource-title']);
             createElementAndAppend(resourceInfo, 'p', null, description, ['resource-desc']);
             let resourceAncor = createElementAndAppend(resourceInfo, 'a', null, "More Info", ['resource-link']);
+            // resourceAncor.href = "Pages/ResourceList.html";
+            //getDataFromResourceDetail(title, description, details, link);
             resourceAncor.addEventListener("click", (event) => {
-                window.location.href = "../../Pages/ResourceDetail.html";
+                window.location.href = "Pages/ResourceList.html";
                 event.preventDefault(); // prevent the default behavior of following the href link
                 getDataFromResourceDetail(title, description, details, link);
             });   
@@ -47,7 +41,7 @@ const renderResourceList = async ()  => {
         });
         });
     }
-        displayHotlines(await getHotlineData());
+        displayHotlines(await getHotlineData('resource'));
     })();
 }
 export { renderResourceList };
