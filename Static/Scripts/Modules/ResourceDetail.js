@@ -1,38 +1,31 @@
-const getDataFromResourceDetail = () => {
-    
-    console.log(title, description, details)
-    const container = document.getElementById("detailsContainer");
-    container.style.width = "80%";
-    container.style.margin = "auto";
-    container.style.paddingTop = "20px";
 
-    const resourceHeading = document.createElement('h1');
-    resourceHeading.innerHTML = title;
-    container.appendChild(resourceHeading);
-
-    const resourceDescription = document.createElement('p');
-    resourceDescription.innerHTML = description;
-    container.appendChild(resourceDescription);
-
-    const resourceDetails = document.createElement('p');
-    resourceDetails.innerHTML = details;
-    container.appendChild(resourceDetails);
-
-    const resourceLink = document.createElement('a');
-    resourceLink.href = link;
-    resourceLink.innerHTML = "Visit Resource";
-    resourceLink.target = "_blank";
-    container.appendChild(resourceLink);
-    
+const createElementAndAppend = (parent, tag, id, text, classes = []) => {
+    const element = document.createElement(tag);
+    parent.appendChild(element);
+    if (id) element.id = id;
+    if (text) element.innerText = text;
+    if(tag == "img") element.src = text; 
+    classes.forEach(className => element.classList.add(className));
+    return element;
 }
-document.addEventListener("DOMContentLoaded", () => {
-    // Call the getDataFromResourceDetail function here with the appropriate arguments
+
+const renderResourceDetail = () => {    
     const title = "Resource Title";
     const description = "Resource description";
     const details = "Resource details";
     const link = "https://example.com/resource";
-    getDataFromResourceDetail(title, description, details, link);
-});
+    const container = document.getElementById("detailsContainer");
+    container.style.width = "80%";
+    container.style.margin = "auto";
+    container.style.paddingTop = "20px";
+    createElementAndAppend(container,'h1',null,title);
+    createElementAndAppend(container,'p',null,description);
+    createElementAndAppend(container,'p',null,details);
+    const resourceLink =createElementAndAppend(container,'a',null,"Click Me");
+    resourceLink.href = link;
+    resourceLink.innerHTML = "Visit Resource";
+    resourceLink.target = "_blank";
+}
 
 
-export default getDataFromResourceDetail;
+export { renderResourceDetail };
