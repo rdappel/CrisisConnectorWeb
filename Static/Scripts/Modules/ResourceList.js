@@ -26,7 +26,7 @@ const renderResourceList = async ()  => {
             createElementAndAppend(resourceInfo, 'h2', null, title, ['resource-title']);
             createElementAndAppend(resourceInfo, 'p', null, description, ['resource-desc']);
             let resourceAncor = createElementAndAppend(resourceInfo, 'a', null, "More Info", ['resource-link']);
-            resourceAncor.href = "/Resources/Depression";
+            resourceAncor.href = "/Resources/" + title;
         });
         });
     }

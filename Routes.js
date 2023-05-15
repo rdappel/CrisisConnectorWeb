@@ -6,9 +6,6 @@ router.get('/', (request, response) => response.sendFile('Pages/HomePage.html', 
 router.get('/Hotlines', (request, response) => response.sendFile('Pages/HotlineList.html', { root }));
 router.get('/Resources', (request, response) => response.sendFile('Pages/ResourceList.html', { root }));
 router.get('/Resources/:Name', (request, response) => {
-  const Name = request.params.something; // Extract the value of the "something" parameter
-  console.log(Name);
-  // Use the "something" value as needed
   response.sendFile('Pages/ResourceDetail.html', { root });
 });
 

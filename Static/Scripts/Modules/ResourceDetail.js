@@ -10,7 +10,7 @@ const createElementAndAppend = (parent, tag, id, text, classes = []) => {
 }
 
 const renderResourceDetail = () => {    
-    const title = "Resource Title";
+    const title = "Test";
     const description = "Resource description";
     const details = "Resource details";
     const link = "https://example.com/resource";
