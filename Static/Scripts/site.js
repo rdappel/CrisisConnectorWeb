@@ -10,8 +10,7 @@ window.addEventListener('load', () => {
     renderResourceList();
   } else if(pageName === "Hotlines"){
     renderHotlineListPage();
-  } else if(pageName.includes("ResourceDetail")) {
+  } else if(pageName.includes("Resources/")) {
     renderResourceDetail();
   }
-  
 });
