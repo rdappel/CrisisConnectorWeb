@@ -1,17 +1,17 @@
 [
     {
-      "category": "Depression",
+      "category": "Mental Health Resources",
       "types": [
         {
           "title": "Depression",
-          "description": "Depression",
-          "details": "Depression is a mental health disorder that affects a person's mood, thoughts, and behavior. It is a serious condition that can significantly impact a person's daily life, relationships, and overall well-being. Depression can occur at any age and can affect anyone, regardless of gender, ethnicity, or background.",
+          "description": "Depression, also known as major depressive disorder or clinical depression, is a common and serious mood disorder that affects how you feel, think, and handle daily activities. It's characterized by persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in activities the person usually enjoys.",
+          "details": "Depression does not have a single cause. It can be triggered by a life crisis, physical illness, or something else - but it can also occur spontaneously. It's believed to be caused by a combination of genetic, biological, environmental, and psychological factors (National Institute of Mental Health, 2021).",
           "link": "https://www.google.com/",
           "image_path": "https://quotewizard.com/media/l5ybwuym/study-seasonal-depression.png?anchor=center&mode=crop&width=900&height=506&rnd=133135290139830000?format=webp&quality=80"
         },
         {
           "title": "Anxiety",
-          "description": "Anxiety",
+          "description": "Anxiety is a normal and often healthy emotion. However, when a person regularly feels disproportionate levels of anxiety, it might become a medical disorder. Anxiety disorders form a category of mental health diagnoses leading to excessive nervousness, fear, apprehension, and worry. ",
           "details": "Anxiety is a mental health condition characterized by intense feelings of worry, fear, or apprehension. It is a normal and adaptive response to stress and can be beneficial in some situations, but when it becomes excessive and interferes with daily life, it can be considered a disorder.",
           "link": "https://www.google.com/",
           "image_path": "https://quotewizard.com/media/3azjd0pe/study-mental-health-during-pandemic.png"
@@ -19,18 +19,18 @@
       ]
     },
     {
-        "category": "Sleep",
+        "category": "FinancialResources",
         "types": [
           {
-            "title": "Sleep",
-            "description": "Sleep",
+            "title": "FinancialCrisis",
+            "description": "Under Works",
             "details": "A group of conditions SLEEEEPP with the elevation or lowering of a person's mood, such as depression or bipolar disorder.",
             "link": "https://www.google.com/",
             "image_path": "https://quotewizard.com/media/l5ybwuym/study-seasonal-depression.png?anchor=center&mode=crop&width=900&height=506&rnd=133135290139830000?format=webp&quality=80"
           },
           {
-            "title": "UESS",
-            "description": "WEEEE",
+            "title": "Test",
+            "description": "Test",
             "details": "A TEST of conditions associated with the elevation or lowering of a person's mood, such as depression or bipolar disorder.",
             "link": "https://www.google.com/",
             "image_path": "https://quotewizard.com/media/3azjd0pe/study-mental-health-during-pandemic.png"
