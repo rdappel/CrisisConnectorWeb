@@ -7,10 +7,10 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: #444;
     background: linear-gradient(150deg, #000428, hsl(273, 80%, 14%)); 
   }
   
@@ -18,7 +18,7 @@
   header {
     background-color: #fff;
     padding: 1rem;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     left: 0;
@@ -213,6 +213,7 @@
     padding: 2rem;
     margin-top: 4rem;
     text-align: center;
+    border-top: 1px solid #ddd;
   }
   
   .footer-text {
