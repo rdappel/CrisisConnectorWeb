@@ -4,7 +4,7 @@ const createElementAndAppend = (parent, tag, id, text, classes = []) => {
     const element = document.createElement(tag);
     parent.appendChild(element);
     if (id) element.id = id;
-    if (text) element.innerText = text;
+    if (text) element.innerHTML = text;
     if(tag == "img") element.src = text; 
     classes.forEach(className => element.classList.add(className));
     return element;

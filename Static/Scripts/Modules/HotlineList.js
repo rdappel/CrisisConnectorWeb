@@ -26,18 +26,19 @@ const renderHotlineListPage = async ()  => {
 			  hotlineLink.href = link;
 			});
 		  
-			hotlineTitle.addEventListener("click", (event) => {
-			  // Prevent default behavior of following the anchor link
-			  event.preventDefault();
-			  // Ask user if they want to make a call
-			  const confirmed = window.confirm(`Do you want to call ${title}?`);
-			  if (confirmed) {
-				// Open the phone app with the phone number
-				window.location.href = `tel:${types[0].link}`;
-			  }
+			hotlineName.addEventListener("click", (event) => {
+				// Prevent default behavior of following the anchor link
+				event.preventDefault();
+				// Ask user if they want to make a call
+				// const confirmed = window.confirm(`Do you want to call ${title}?`);
+				const confirmed = window.confirm(`Do you want to call?`);
+				if (confirmed) {
+				  // Open the phone app with the phone number
+				  window.location.href = `tel:${types[0].link}`;
+				}
+			  });
 			});
-		  });
-		  
+			
 	}	
 
 	/* The code below handles the search. The search will run every 200ms for performace reasons.

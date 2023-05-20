@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const root = 'Static' 
+const root = 'Static'; 
 
 router.get('/', (request, response) => response.sendFile('Pages/HomePage.html', { root }));
 router.get('/Hotlines', (request, response) => response.sendFile('Pages/HotlineList.html', { root }));
@@ -20,17 +20,5 @@ router.get('/api/:userParam', function (request, response) { // anything after t
     response.status(404).sendFile('Pages/error404.html', { root });
 });
 
-// Not completed
-router.get('/Resources/:userParam', (req, res) => {
-    const { title, description, details, link } = req.query;
-    const response = {
-      title: decodeURIComponent(title),
-      description: decodeURIComponent(description),
-      details: decodeURIComponent(details),
-      link: decodeURIComponent(link)
-    };
-    res.json(response);
-  });
-    
 
 module.exports = router;

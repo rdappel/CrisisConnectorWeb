@@ -11,7 +11,6 @@ window.addEventListener('load', () => {
   } else if(pageName === "Hotlines"){
     renderHotlineListPage();
   } else if(window.location.href.includes("Resources/")) {
-      console.log(pageName);
       renderResourceDetail(pageName);
   }
 });

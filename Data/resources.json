@@ -4,14 +4,14 @@
       "types": [
         {
           "title": "Depression",
-          "description": "Depression, also known as major depressive disorder or clinical depression, is a common and serious mood disorder that affects how you feel, think, and handle daily activities. It's characterized by persistent feelings of sadness, hopelessness, and a lack of interest or pleasure in activities the person usually enjoys.",
-          "details": "Depression does not have a single cause. It can be triggered by a life crisis, physical illness, or something else - but it can also occur spontaneously. It's believed to be caused by a combination of genetic, biological, environmental, and psychological factors (National Institute of Mental Health, 2021).",
+          "description": "Depression, also known as major depressive disorder or clinical depression, is a common and serious mood disorder that affects how you feel, think, and handle daily activities.",
+          "details": "<br><p>Depression (major depressive disorder) is a common and serious medical illness that negatively affects how you feel, the way you think and how you act. Fortunately, it is also treatable. Depression causes feelings of sadness and/or a loss of interest in activities you once enjoyed. It can lead to a variety of emotional and physical problems and can decrease your ability to function at work and at home.</p><h2 style=\"margin-top:25px\">Symptoms</h2><ul><li>Persistent sad, anxious, or \"empty\" mood.</li><li>Feelings of hopelessness, pessimism</li><li>Irritability</li><li>Feelings of guilt, worthlessness, helplessness</li><li>Loss of interest or pleasure in hobbies and activities</li><li>Decreased energy or fatigue</li><li>Decreased energy or fatigue</li><li>Difficulty concentrating, remembering, or making decisions</li><li>Insomnia, early-morning wakefulness, or sleeping too much</li><li>Appetite and/or weight changes</li><li>Thoughts of death or suicide, or suicide attempts</li><li>Aches or pains, headaches, cramps, or digestive problems without a clear physical cause and/or that do not ease even with treatment</li></ul><br><p>Not everyone who is depressed experiences every symptom. Some people experience only a few symptoms while others may experience many.</p><br><br><h2>Causes and Risk Factors</h2><br><p>Depression does not have a single known cause. Rather, it likely results from a combination of genetic, biochemical, environmental, and psychological factors.</p><br><ul><li><h4>Biological differences:</h4> People with depression appear to have physical changes in their brains. The significance of these changes is still uncertain but may eventually help pinpoint causes.</li><br><li><h4>Brain chemistry:</h4> People with depression appear to have physical changes in their brains. The significance of these changes is still uncertain but may eventually help pinpoint causes.</li><br><li><h4>Brain chemistry:</h4> Neurotransmitters are naturally occurring brain chemicals that likely play a role in depression. Recent research indicates that changes in the function and effect of these neurotransmitters and how they interact with neurocircuits involved in maintaining mood stability may play a significant role in depression and its treatment.</li><br><li><h4>Hormones</h4> Changes in the body's balance of hormones may be involved in causing or triggering depression.</li><br><li><h4>Inherited traits:</h4>Depression is more common in people whose blood relatives — such as a parent or grandparent — also have the condition.</li><br><li><h4>Life events:</h4>Trauma, loss of a loved one, a difficult relationship, or any stressful situation may trigger depression.</li></ul>",
           "link": "https://www.google.com/",
           "image_path": "https://quotewizard.com/media/l5ybwuym/study-seasonal-depression.png?anchor=center&mode=crop&width=900&height=506&rnd=133135290139830000?format=webp&quality=80"
         },
         {
           "title": "Anxiety",
-          "description": "Anxiety is a normal and often healthy emotion. However, when a person regularly feels disproportionate levels of anxiety, it might become a medical disorder. Anxiety disorders form a category of mental health diagnoses leading to excessive nervousness, fear, apprehension, and worry. ",
+          "description": "Anxiety is a normal and often healthy emotion. However, when a person regularly feels disproportionate levels of anxiety, it might become a medical disorder. ",
           "details": "Anxiety is a mental health condition characterized by intense feelings of worry, fear, or apprehension. It is a normal and adaptive response to stress and can be beneficial in some situations, but when it becomes excessive and interferes with daily life, it can be considered a disorder.",
           "link": "https://www.google.com/",
           "image_path": "https://quotewizard.com/media/3azjd0pe/study-mental-health-during-pandemic.png"
@@ -19,7 +19,7 @@
       ]
     },
     {
-        "category": "FinancialResources",
+        "category": "Financial Resources",
         "types": [
           {
             "title": "FinancialCrisis",
