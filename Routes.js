@@ -12,12 +12,12 @@ router.get('/api/:userParam', function (request, response) { // anything after t
     const {userParam} = request.params;
     if(userParam === "hotline") {
       const data = require('./Data/hotline.json');
-      response.send(data);
+      return response.send(data);
     } else if(userParam === "resource") {
         const data = require('./Data/resources.json');
-        response.send(data);
+        return response.send(data);
     }
-    response.status(404).sendFile('Pages/error404.html', { root });
+    return response.status(404).sendFile('Pages/error404.html', { root });
 });
 
 
