@@ -98,8 +98,8 @@ class CustomNavbar extends HTMLElement {
       position: fixed;
       top: 65px;
       right: 0;
-      width: 200px;
-      height: 200px;
+      width: 35%;
+      height: 30%;
       font-color: #ffffff;
       box-shadow: 0 0 10px #85888C;
       margin: 0;

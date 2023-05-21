@@ -34,7 +34,7 @@ const renderHotlineListPage = async ()  => {
 				const confirmed = window.confirm(`Do you want to call?`);
 				if (confirmed) {
 				  // Open the phone app with the phone number
-				  window.location.href = `${types[0].link}`;
+				  window.location.href = `tel:${types[0].link}`;
 				}
 			  });
 			});
