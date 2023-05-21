@@ -154,3 +154,13 @@ body {
 .footer-text a:hover {
   text-decoration: underline;
 }
+
+@media (prefers-color-scheme: dark) 
+  {
+    /* The reason for the !important is to override bootstraps classes for the dark mode*/
+    body 
+    {
+      background-color: black !important;
+    }
+  }
+  
