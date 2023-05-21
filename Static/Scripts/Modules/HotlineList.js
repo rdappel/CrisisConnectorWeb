@@ -23,7 +23,7 @@ const renderHotlineListPage = async ()  => {
 			const hotlineName = createElementAndAppend(hotlineTitle, "div", "hotlineName");
 			types.forEach(({ name, link }) => {
 			  const hotlineLink = createElementAndAppend(hotlineName, "a", null, name);
-			  hotlineLink.href = link;
+			  hotlineLink.href = `tel:${types[0].link}`;
 			});
 		  
 			hotlineName.addEventListener("click", (event) => {
@@ -34,7 +34,8 @@ const renderHotlineListPage = async ()  => {
 				const confirmed = window.confirm(`Do you want to call?`);
 				if (confirmed) {
 				  // Open the phone app with the phone number
-				  window.location.href = `tel:${types[0].link}`;
+				//   window.location.href = `tel:${types[0].link}`;
+				//   console.log(`tel:${types[0].link}`);
 				}
 			  });
 			});
