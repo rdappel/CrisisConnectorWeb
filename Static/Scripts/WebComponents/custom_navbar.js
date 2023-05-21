@@ -23,6 +23,7 @@ class CustomNavbar extends HTMLElement {
     }
     
     nav {
+      margin-top: 2%;
       height: 65px;
     }
     #menuToggle {

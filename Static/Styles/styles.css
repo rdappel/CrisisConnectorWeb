@@ -13,6 +13,7 @@ body {
 }
 /* styles.css for Navbar Start */
 .navbar {
+    margin-top: 5%;
     font-family: 'Arial', sans-serif;
     position: relative;
     perspective: 1000px;
