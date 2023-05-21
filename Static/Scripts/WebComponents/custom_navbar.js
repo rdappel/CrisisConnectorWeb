@@ -9,10 +9,10 @@ class CustomNavbar extends HTMLElement {
       text-decoration: none;
       color: #1E1E23;
       opacity:1;
-      font-family: sans serif;
-      font-size: 2em;
-      font-weight: 500;
+      font-family: Arial, sans-serif;
+      font-size: 1.7em;
       transition: 200ms;
+      font-weight: bold;
     }
     a:hover {
       opacity:0.5;
@@ -99,8 +99,8 @@ class CustomNavbar extends HTMLElement {
       position: fixed;
       top: 65px;
       right: 0;
-      width: 35%;
-      height: 30%;
+      width: 15%;
+      height: 15%;
       font-color: #ffffff;
       box-shadow: 0 0 10px #85888C;
       margin: 0;
@@ -116,7 +116,7 @@ class CustomNavbar extends HTMLElement {
     @media screen and (max-width: 768px) {
       #menu {
         width: 250px;
-        height: 300px;
+        height: 220px;
         background: linear-gradient(to right, #0f0c29, #302b63, #24243e); 
         
         
@@ -176,7 +176,6 @@ class CustomNavbar extends HTMLElement {
           <li><a href="/">Home</a></li>
           <li><a href="../Hotlines">Hotline</a></li>
           <li><a href="../Resources">Resources</a></li>
-          <li><a href="#">Contact</a></li>
       </ul>
       
       </div>

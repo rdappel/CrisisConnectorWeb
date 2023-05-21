@@ -75,7 +75,7 @@ const renderHotlineListPage = async ()  => {
 			parent.style.display = 'block';
 			setTimeout(() => {
 			  element.classList.remove('highlight');
-			}, 3500); // Remove 'highlight' class after 2 seconds (adjust as needed)
+			}, 3000); // Remove 'highlight' class after 2 seconds (adjust as needed)
 		  });
 		};
 		if (searchTimeout) clearTimeout(searchTimeout);
