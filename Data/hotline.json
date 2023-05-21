@@ -4,27 +4,27 @@
     "types": [
       {
         "name": "Depression",
-        "link": "8006624357"
+        "phone": "8006624357"
       },
       {
         "name": "Anxiety Disorder",
-        "link": "8669033787"
+        "phone": "8669033787"
       }, 
       {
         "name": "Bipolar Disorder",
-        "link": "866-903-3787"
+        "phone": "866-903-3787"
       },
       {
         "name": "Post-Traumatic Stress Disorder (PTSD)",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Schizophrenia",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Disruptive behaviour",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       }
     ]
   },
@@ -33,31 +33,31 @@
     "types": [
       {
         "name": "Insomnia",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Sleep Apnea",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Narcolepsy",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Restless Legs Syndrome",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Parasomnias",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Excessive Sleepiness",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Shift Work Disorder",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       }
     ]
   },
@@ -66,15 +66,15 @@
     "types": [
       {
         "name": "Anorexia Nervosa",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Bulimia Nervosa",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       },
       {
         "name": "Binge Eating Disorder",
-        "link": "https://www.google.com/"
+        "phone": "https://www.google.com/"
       }
     ]
   }

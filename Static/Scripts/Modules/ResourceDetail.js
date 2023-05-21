@@ -1,5 +1,5 @@
 import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
-
+/* This is function that takes parameters to append as the child on the UI */
 const createElementAndAppend = (parent, tag, id, text, classes = []) => {
     const element = document.createElement(tag);
     parent.appendChild(element);
@@ -9,7 +9,10 @@ const createElementAndAppend = (parent, tag, id, text, classes = []) => {
     classes.forEach(className => element.classList.add(className));
     return element;
 }
-
+/* The resourceName is a parameter that is passed from site.js.
+The goal is when the user types Resources/Depression, it'll 
+take the depression and then check weather it is on the .json
+and this display it accordingly */
 const renderResourceDetail =  async (ResouceName) => {   
     (async () => {
         const displayResourceDetail = data => {
@@ -34,8 +37,5 @@ const renderResourceDetail =  async (ResouceName) => {
         }
         displayResourceDetail(await getHotlineData('resource'));
     })();
-
 }
-
-
 export { renderResourceDetail };
