@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+  
   }
 
 body {
@@ -8,6 +9,7 @@ body {
   background: linear-gradient(150deg, #000428, hsl(273, 80%, 14%)); 
   background-repeat: repeat-y;
   height: auto;
+  overflow: hidden;
 }
 /* styles.css for Navbar Start */
 .navbar {
