@@ -3,21 +3,11 @@ to render the hotline list dynamically. The renderHotlineListPage
 function is being exported as a module so that the site.js can use
 this function to render. */
 import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
+import { createElementAndAppend } from '../Modules/Helper.js';
+
 const renderHotlineListPage = async ()  => {
 	const displayHotlines = data => {
 		if (!data) return;
-		/* This function was created to prevent the repetition of creating 
-		elements and appending it. This function, take's bunch of parameters 
-		and then creates an elements and appends it to the DOM. 
-		Note: The function will return a element */
-		const createElementAndAppend = (parent, tag, id, text, classes = []) => {
-			const element = document.createElement(tag);
-			parent.appendChild(element);
-			if (id) element.id = id;
-			if (text) element.innerText = text;
-			classes.forEach(className => element.classList.add(className));
-			return element;
-		} 
 		/* This code takes the .json file and starts to deserialize the file.
 		It is going thought the json file and appropriately append to the DOM. */
 		data.forEach(({ title, types }) => {

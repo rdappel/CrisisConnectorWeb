@@ -1,4 +1,5 @@
 import { getHotlineData } from '../Modules/CrisisConnectorEndpoints.js';
+import { createElementAndAppend } from '../Modules/Helper.js';
 /* This is being exported as a module so that later 
 the app.js can call it to render the ResourceList. 
 The method itself is used to get the data then
@@ -8,15 +9,6 @@ const renderResourceList = async ()  => {
     (async () => {
     const displayHotlines = data => {
         if (!data) return;
-        const createElementAndAppend = (parent, tag, id, text, classes = []) => {
-            const element = document.createElement(tag);
-            parent.appendChild(element);
-            if (id) element.id = id;
-            if (text) element.innerText = text;
-            if(tag == "img") element.src = text; 
-            classes.forEach(className => element.classList.add(className));
-            return element;
-        }
         data.forEach(({ category, types }) => {
         createElementAndAppend(container, 'h2', null , category, ['category-title']); 
         const resourceGrid = createElementAndAppend(container, 'div', null, null, ['resource-grid']); 
