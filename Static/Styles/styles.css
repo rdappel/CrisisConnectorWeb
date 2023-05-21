@@ -116,7 +116,10 @@ body {
     color: #fff;
     text-decoration: none;
   }
- 
+  .highlight {
+    background-color: lavender !important;
+    color: black !important;
+  }
 /* Heading Text */
 #rainbow-heading-text {
   background-clip: text;   

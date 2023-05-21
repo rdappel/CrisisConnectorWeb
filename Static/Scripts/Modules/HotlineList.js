@@ -53,26 +53,34 @@ const renderHotlineListPage = async ()  => {
 	*/
 	searchInput.addEventListener('keyup', ({ key, target }) => {
 		const runSearch = () => {
-			const searchText = target.value.toLowerCase().trim();
-			const hasText = searchText !== ''
-			document.querySelectorAll('.searchHotline').forEach(element => {
-				element.style.display = hasText ? 'none' : 'block';
-			});
-			if (!hasText) return;
-			const searchElements = '.searchHotline *';
-			const elements = document.querySelectorAll(searchElements);
-			elements.forEach(element => {
-				const text = element.innerText.toLowerCase();
-				const found = text.indexOf(searchText) > -1;
-				if (!found) return
-				const parent = element.closest('.searchHotline')
-				parent.style.display = 'block';
-			});
-		}
+		  const searchText = target.value.toLowerCase().trim();
+		  const hasText = searchText !== '';
+	  
+		  document.querySelectorAll('.searchHotline').forEach(element => {
+			element.style.display = hasText ? 'none' : 'block';
+		  });
+	  
+		  if (!hasText) return;
+	  
+		  const elements = document.querySelectorAll('.searchHotline *');
+		  elements.forEach(element => {
+			const text = element.innerText.toLowerCase();
+			const found = text.indexOf(searchText) > -1;	  
+			if (!found) return;
+			if(element.tagName.toLocaleLowerCase() === 'a') {
+				element.classList.add('highlight');
+			}
+			console.log(element);
+			const parent = element.closest('.searchHotline');
+			parent.style.display = 'block';
+			setTimeout(() => {
+			  element.classList.remove('highlight');
+			}, 3500); // Remove 'highlight' class after 2 seconds (adjust as needed)
+		  });
+		};
 		if (searchTimeout) clearTimeout(searchTimeout);
-		searchTimeout = setTimeout(runSearch, 200);
-	});
-	
+		searchTimeout = setTimeout(runSearch, 100);
+	  });
 	/* Since getHotline is an aync function, we need to do await to call it. 
 	The only way to do await is when the function is inside a async, that's why
 	it is nested async arrow function. The method getHotlineData is being imported
