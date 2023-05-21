@@ -12,6 +12,8 @@
     line-height: 1.5;
     color: #444;
     background: linear-gradient(150deg, #000428, hsl(273, 80%, 14%)); 
+    background-color: black; 
+
   }
   
   /* Header styles */
