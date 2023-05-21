@@ -34,7 +34,7 @@ const renderHotlineListPage = async ()  => {
 				const confirmed = window.confirm(`Do you want to call?`);
 				if (confirmed) {
 				  // Open the phone app with the phone number
-				  window.location.href = `tel:${types[0].link}`;
+				  window.location.href = `${types[0].link}`;
 				}
 			  });
 			});
@@ -50,9 +50,16 @@ const renderHotlineListPage = async ()  => {
 	parnet to display, we are getting the parnet with the code element.closest
 	*/
 
+	// Checks if the user pressed return, if so ignore it
 	let searchTimeout = null;
 	const searchInput = document.querySelector('#search');
-	searchInput.addEventListener('keyup', ({ target }) => {
+	searchInput.addEventListener('keydown', function(event) {
+		if (event.key === "Enter") {
+			event.preventDefault();
+		}
+	});
+	
+	searchInput.addEventListener('keyup', ({ key, target }) => {
 		const runSearch = () => {
 			const searchText = target.value.toLowerCase().trim();
 			const hasText = searchText !== ''
@@ -73,7 +80,7 @@ const renderHotlineListPage = async ()  => {
 		if (searchTimeout) clearTimeout(searchTimeout);
 		searchTimeout = setTimeout(runSearch, 200);
 	});
-
+	
 	/* Since getHotline is an aync function, we need to do await to call it. 
 	The only way to do await is when the function is inside a async, that's why
 	it is nested async arrow function */
